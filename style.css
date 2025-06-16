@@ -2,11 +2,15 @@ body {
   background-color: #eeede2;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
+  background-image: url("./img/image\ \(32\).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 * {
   box-sizing: border-box !important;
   text-decoration: none !important;
+  user-select: none !important;
 }
 
 .container {
@@ -65,4 +69,9 @@ footer div a {
   font-size: 18px;
   font-weight: 600;
   color: red;
+}
+
+#card {
+  background-color: rgba(0, 0, 0, 0.35) !important;
+  color: white !important;
 }
