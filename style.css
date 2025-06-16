@@ -1,0 +1,68 @@
+body {
+  background-color: #eeede2;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+}
+
+* {
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+}
+
+.card {
+  margin-top: 100px;
+}
+
+.icon {
+  position: relative;
+  top: -50px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+}
+
+footer {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 83%;
+}
+
+footer div {
+  width: 150px;
+  height: 55px;
+  margin: 5px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer div span {
+  font-size: 18px;
+  font-weight: 400;
+  color: orange;
+}
+
+footer div a {
+  font-size: 18px;
+  font-weight: 600;
+  color: red;
+}
