@@ -3,6 +3,7 @@ let card = document.getElementById('card');
 let details = document.getElementById('details');
 let weatherIcon = document.getElementById('weather-icon');
 let overlay = document.getElementById('overlay');
+let btn = document.querySelector(".send");
 changeLocation.city.focus();
 // loader
 function loader(state) {
@@ -40,3 +41,16 @@ changeLocation.addEventListener("submit", (e) => {
             updateUI(datas)
         })
 });
+btn.addEventListener("click", () => {
+    e.preventDefault();
+    let cityName = changeLocation.city.value.trim()
+    changeLocation.reset();
+    loader(true);
+    getWeather(cityName)
+        .then((datas) => {
+            updateUI(datas)
+        })
+        .finally(() => {
+            loader(false);
+        })
+})
